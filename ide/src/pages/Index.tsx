@@ -336,11 +336,9 @@ const Index = () => {
                     onTabClose={handleTabClose}
                   />
                   <div className="flex-1 overflow-hidden">
-                    <CodeEditor
-                      content={content}
-                      language={language}
-                      onCursorChange={(line, col) => setCursorPos({ line, col })}
-                      onSave={handleSave}
+                  <CodeEditor
+                    onCursorChange={(line, col) => setCursorPos({ line, col })}
+                     onSave={handleSave}
                     />
                   </div>
                 </ResizablePanel>
